@@ -1,0 +1,110 @@
+body {
+    font-family: 'Times New Roman', serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #ffd1dc;
+    overflow-x: hidden;
+}
+
+/* Ribbon Navigation */
+.ribbon {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #ffb6c1;
+    padding: 10px;
+    text-align: center;
+}
+
+.ribbon button {
+    font-size: 18px;
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    background: #ff69b4;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.ribbon button:hover {
+    background: #ff1493;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    font-size: 14px;
+}
+
+/* Pages */
+.page {
+    display: none;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+/* Home Page */
+.home-page h1 {
+    font-size: 5rem;
+    margin-top: 20%;
+}
+
+/* Memories Page */
+.memories-page {
+    background: url('your-image.jpg') repeat;
+}
+
+.memories-page video {
+    width: 60%;
+    height: auto;
+}
+
+.memories-page p {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* Question Page */
+.question-page {
+    background: url('your-image.jpg') repeat;
+}
+
+.question-page h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.question-page button {
+    font-size: 24px;
+    padding: 10px 20px;
+    margin: 20px;
+    cursor: pointer;
+    border: none;
+    background: #ff69b4;
+    color: white;
+    border-radius: 10px;
+}
+
+.question-page button:hover {
+    background: #ff1493;
+}
+
+/* Heart Animation */
+@keyframes floatingHearts {
+    0% { transform: translateY(0) scale(1); opacity: 1; }
+    100% { transform: translateY(-200px) scale(1.5); opacity: 0; }
+}
+
+.heart {
+    position: fixed;
+    bottom: 0;
+    width: 30px;
+    height: 30px;
+    background: url('heart-icon.png') no-repeat center;
+    background-size: contain;
+    animation: floatingHearts 5s ease-in-out;
+}
